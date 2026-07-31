@@ -1,0 +1,21 @@
+{
+  "name": "cline-web-tools",
+  "version": "1.0.0",
+  "description": "webtool CLI: web fetch / web search / Confluence search for Cline and other AI coding assistants",
+  "type": "module",
+  "bin": { "webtool": "src/cli.js" },
+  "main": "src/cli.js",
+  "scripts": {
+    "postinstall": "node -e \"process.exit(0)\"",
+    "doctor": "node src/cli.js doctor"
+  },
+  "engines": { "node": ">=18.17" },
+  "dependencies": {
+    "@mozilla/readability": "^0.5.0",
+    "linkedom": "^0.18.5",
+    "turndown": "^7.2.0",
+    "undici": "^6.21.0"
+  },
+  "license": "MIT",
+  "private": true
+}
